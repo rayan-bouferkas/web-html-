@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>My Web Site</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Welcome to my Web Site</h1>
+
+<a class="lab">Web Development (Lab1)</a>
+
+<div class="container">
+<div class="info">
+<p><span class="green">Full name:</span> bouferkas med rayan</p>
+<p><span class="green">Age:</span> 20 years old</p>
+<p><span class="green">Class:</span> 2nd LMD computer Science</p>
+<p><span class="green">University:</span> University of EL OUED</p>
+</div>
+
+<div class="photo">
+<img src="image fanatic.jpeg">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
