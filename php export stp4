@@ -1,0 +1,26 @@
+
+<?php
+session_start();
+
+header('Content-Type: text/csv');
+header('Content-Disposition: attachment; filename="gpa_history.csv"');
+
+$output = fopen('php://output', 'w');
+
+fputcsv($output, ['Student Name', 'Semester', 'GPA', 'Interpretation', 'Time']);
+
+if (isset($_SESSION['history'])) {
+    foreach ($_SESSION['history'] as $row) {
+        fputcsv($output, [
+            $row['student_name'],
+            $row['semester'],
+            $row['gpa'],
+            $row['interpretation'],
+            $row['time']
+        ]);
+    }
+}
+
+fclose($output);
+exit;
+?>
